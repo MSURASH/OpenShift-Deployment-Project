@@ -10,10 +10,10 @@ public class CustomRestController {
 
 	@Value("${custom.val}")
 	private String val;
-	
+
 	@GetMapping("/get")
 	public ResponseEntity<String> print() {
-		
+
 		return ResponseEntity.ok().body(val);
 	}
 }
