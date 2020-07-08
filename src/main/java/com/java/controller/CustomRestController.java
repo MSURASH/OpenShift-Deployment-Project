@@ -13,7 +13,6 @@ public class CustomRestController {
 
 	@GetMapping("/get")
 	public ResponseEntity<String> print() {
-
 		return ResponseEntity.ok().body(val);
 	}
 }
